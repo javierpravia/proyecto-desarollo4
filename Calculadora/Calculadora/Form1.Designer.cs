@@ -50,6 +50,7 @@
             this.btnResta = new System.Windows.Forms.Button();
             this.btnSuma = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
+            this.tbHistorial = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // tbCalculos
@@ -226,6 +227,7 @@
             this.btnHistorial.TabIndex = 17;
             this.btnHistorial.Text = "◴";
             this.btnHistorial.UseVisualStyleBackColor = true;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
             // btnMultiplicacion
             // 
@@ -263,15 +265,25 @@
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(83, 55);
             this.btnDecimal.TabIndex = 23;
-            this.btnDecimal.Text = ".";
+            this.btnDecimal.Text = ",";
             this.btnDecimal.UseVisualStyleBackColor = true;
             this.btnDecimal.Click += new System.EventHandler(this.btnDecimal_Click);
+            // 
+            // tbHistorial
+            // 
+            this.tbHistorial.Location = new System.Drawing.Point(300, 175);
+            this.tbHistorial.Multiline = true;
+            this.tbHistorial.Name = "tbHistorial";
+            this.tbHistorial.Size = new System.Drawing.Size(270, 396);
+            this.tbHistorial.TabIndex = 24;
+            this.tbHistorial.Visible = false;
             // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1516, 1061);
+            this.Controls.Add(this.tbHistorial);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.btnResta);
@@ -328,6 +340,7 @@
         private System.Windows.Forms.Button btnResta;
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Button btnDecimal;
+        private System.Windows.Forms.TextBox tbHistorial;
     }
 }
 

@@ -12,6 +12,7 @@ namespace Calculadora
 {
     public partial class Calculadora : Form
     {
+
         public Calculadora()
         {
             InitializeComponent();
@@ -121,8 +122,10 @@ namespace Calculadora
                             tbCalculos.Text = "Error: División por cero";
                         break;
                 }
+                
+                
 
-                tbCalculos.Text = result.ToString();
+                tbCalculos.Text = tbCalculos.Text + "=" + result.ToString();
                 pendingOperation = false;
             }
         }
@@ -196,6 +199,8 @@ namespace Calculadora
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
+            
+
             Evaluar();
         }
 
@@ -210,9 +215,24 @@ namespace Calculadora
 
         private void btnDecimal_Click(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
+            if (!currentInput.Contains(","))
+            {
+                if (currentInput == "")
+                {
+                    currentInput = "0,";
+                    tbCalculos.Text += "0,";
+                }
+                else
+                {
+                    currentInput += ",";
+                    tbCalculos.Text += ",";
+                }
+            }
+         }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            tbHistorial.Visible = true;
         }
     }
 }

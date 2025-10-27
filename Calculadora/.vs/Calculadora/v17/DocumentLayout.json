@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Erika Gonzalez\\Desktop\\Javier\\proyecto-desarollo4\\Calculadora\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|c:\\users\\erika gonzalez\\desktop\\javier\\proyecto-desarollo4\\calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|C:\\Users\\Erika Gonzalez\\Desktop\\Javier\\proyecto-desarollo4\\Calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|c:\\users\\erika gonzalez\\desktop\\javier\\proyecto-desarollo4\\calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|c:\\users\\erika gonzalez\\desktop\\javier\\proyecto-desarollo4\\calculadora\\calculadora\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Erika Gonzalez\\Desktop\\Javier\\proyecto-desarollo4\\Calculadora\\Calculadora\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Calculadora\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Erika Gonzalez\\Desktop\\Javier\\proyecto-desarollo4\\Calculadora\\Calculadora\\Form1.Designer.cs",
+              "RelativeToolTip": "Calculadora\\Form1.Designer.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAIwN0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T22:39:31.094Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,7 +49,7 @@
               "RelativeDocumentMoniker": "Calculadora\\Form1.cs",
               "ToolTip": "C:\\Users\\Erika Gonzalez\\Desktop\\Javier\\proyecto-desarollo4\\Calculadora\\Calculadora\\Form1.cs",
               "RelativeToolTip": "Calculadora\\Form1.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAgwNYAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAANUAAAAAAAAAAAAwwOoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T18:08:46.4Z",
               "EditorCaption": ""
