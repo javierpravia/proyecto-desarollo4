@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HolaMundoPrueba")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b62f0b8542484cefd96169730475e5fba4a8edc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57af5306d2c28815a41b5dbb01d71be8ed3ff74b")]
 [assembly: System.Reflection.AssemblyProductAttribute("HolaMundoPrueba")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HolaMundoPrueba")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
