@@ -1,0 +1,15 @@
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\bin\Debug\net8.0\HolaMundoPrueba.exe
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\bin\Debug\net8.0\HolaMundoPrueba.deps.json
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\bin\Debug\net8.0\HolaMundoPrueba.runtimeconfig.json
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\bin\Debug\net8.0\HolaMundoPrueba.dll
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\bin\Debug\net8.0\HolaMundoPrueba.pdb
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.AssemblyInfoInputs.cache
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.AssemblyInfo.cs
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.csproj.CoreCompileInputs.cache
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.sourcelink.json
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.dll
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\refint\HolaMundoPrueba.dll
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.pdb
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\HolaMundoPrueba.genruntimeconfig.cache
+C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\HolaMundoPrueba\HolaMundoPrueba\obj\Debug\net8.0\ref\HolaMundoPrueba.dll
