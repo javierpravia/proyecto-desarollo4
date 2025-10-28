@@ -1,238 +1,153 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace Calculadora
 {
     public partial class Calculadora : Form
     {
+        double Numero1 = 0, Numero2 = 0;
+        char Operador;
 
         public Calculadora()
         {
             InitializeComponent();
         }
-        string currentInput = "";
-        double result = 0;
-        string operation = "";
-        bool pendingOperation = false;
 
         private void Calculadora_Load(object sender, EventArgs e)
         {
-
+            tbHistorial.Text = " Historial de operaciones \r\n\r\n";
         }
 
-        private void btnNum1_Click(object sender, EventArgs e)
+        private void agregarNumero(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            // Esta parte agrega el número al TextBox para mostrar el cálculo completo
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum2_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum3_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum4_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum5_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum6_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum7_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum8_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum9_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void btnNum0_Click(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            currentInput += button.Text;
-            tbCalculos.Text += button.Text;
-        }
-
-        private void Evaluar()
-        {
-            if (pendingOperation)
-            {
-                double segundoNumero = double.Parse(currentInput);
-
-                switch (operation)
-                {
-                    case "+":
-                        result += segundoNumero;                        
-                        break;
-                    case "-":
-                        result -= segundoNumero;
-                        break;
-                    case "x":
-                        result *= segundoNumero;
-                        break;
-                    case "÷":
-                        if (segundoNumero != 0)
-                            result /= segundoNumero;
-                        else
-                            tbCalculos.Text = "Error: División por cero";
-                        break;
-                }
-                
-                
-
-                tbCalculos.Text = tbCalculos.Text + "=" + result.ToString();
-                pendingOperation = false;
-            }
-        }
-
-        private void btnSuma_Click(object sender, EventArgs e)
-        {
-            if (pendingOperation)
-            {
-                Evaluar();
-            }
-
-            Button button = (Button)sender;
-            operation = button.Text;
-            result = double.Parse(currentInput);
-            pendingOperation = true;
-
-            // Esta parte agrega el símbolo de la operación al TextBox
-            tbCalculos.Text += button.Text;
-            // Reinicia la entrada actual para el siguiente número ingresado
-            currentInput = "";
-
-        }
-
-        private void btnResta_Click(object sender, EventArgs e)
-        {
-            if (pendingOperation)
-            {
-                Evaluar();
-            }
-
-            Button button = (Button)sender;
-            operation = button.Text;
-            result = double.Parse(currentInput);
-            pendingOperation = true;
-
-            tbCalculos.Text += button.Text;
-            currentInput = "";
-        }
-
-        private void btnMultiplicacion_Click(object sender, EventArgs e)
-        {
-            if (pendingOperation)
-            {
-                Evaluar();
-            }
-
-            Button button = (Button)sender;
-            operation = button.Text;
-            result = double.Parse(currentInput);
-            pendingOperation = true;
-
-            tbCalculos.Text += button.Text;
-            currentInput = "";
-        }
-
-        private void btnDivision_Click(object sender, EventArgs e)
-        {
-            if (pendingOperation)
-            {
-                Evaluar();
-            }
-
-            Button button = (Button)sender;
-            operation = button.Text;
-            result = double.Parse(currentInput);
-            pendingOperation = true;
-
-            tbCalculos.Text += button.Text;
-            currentInput = "";
+            var boton = ((Button)sender);
+            if (tbCalculos.Text == "0")
+                tbCalculos.Text = "";
+            tbCalculos.Text += boton.Text;
         }
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            
+            Numero2 = Convert.ToDouble(tbCalculos.Text);
+            double resultado = 0;
+            string operacionTxt = "";
 
-            Evaluar();
+            if (Operador == '+')
+            {
+                operacionTxt = $"{Numero1} + {Numero2}";
+                resultado = Numero1 + Numero2;
+                tbCalculos.Text = resultado.ToString();
+                Numero1 = resultado;
+
+            }
+            else if (Operador == '-')
+            {
+                operacionTxt = $"{Numero1} - {Numero2}";
+                resultado = Numero1 - Numero2;
+                tbCalculos.Text = resultado.ToString();
+                Numero1 = resultado;
+            }
+            else if (Operador == 'X')
+            {
+                operacionTxt = $"{Numero1} * {Numero2}";
+                resultado = Numero1 * Numero2;
+                tbCalculos.Text = resultado.ToString();
+                Numero1 = resultado;
+            }
+            else if (Operador == '/')
+            {
+                if (tbCalculos.Text != "0")
+                {
+                    operacionTxt = $"{Numero1} / {Numero2}";
+                    resultado = Numero1 / Numero2;
+                    tbCalculos.Text = resultado.ToString();
+                    Numero1 = resultado;
+                }
+                else
+                {
+                    MessageBox.Show("No se puede dividir por cero!!");
+                }
+            }
+
+            if (operacionTxt != "")
+            {
+                GuardarEnHistorial(operacionTxt, resultado);
+
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            currentInput = "";
-            result = 0;
-            operation = "";
-            pendingOperation = false;
-            tbCalculos.Text = "";
+            Numero1 = 0;
+            Numero2 = 0;
+            Operador = '\0';
+            tbCalculos.Text = "0";
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
         {
-            if (!currentInput.Contains(","))
+            if (!tbCalculos.Text.Contains("."))
             {
-                if (currentInput == "")
+                tbCalculos.Text += ".";
+            }
+        }
+
+        private void btnSimbolo_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(tbCalculos.Text);
+            Numero1 *= -1;
+            tbCalculos.Text = Numero1.ToString();
+        }
+
+        private void clickOperador(object sender, EventArgs e)
+        {
+            var boton = ((Button)sender);
+            Numero1 = Convert.ToDouble(tbCalculos.Text);
+            Operador = Convert.ToChar(boton.Tag);
+
+            if (Operador == '²')
+            {
+                double resultado = Math.Pow(Numero1, 2);
+                tbCalculos.Text = resultado.ToString();
+
+                GuardarEnHistorial($"{Numero1}²", resultado);
+
+                Numero1 = resultado;
+            }
+            else if (Operador == '√')
+            {
+                if (Numero1 >= 0)
                 {
-                    currentInput = "0,";
-                    tbCalculos.Text += "0,";
+                    double resultado = Math.Sqrt(Numero1);
+                    tbCalculos.Text = resultado.ToString();
+
+                    GuardarEnHistorial($"√{Numero1}", resultado);
+
+                    Numero1 = resultado;
                 }
                 else
                 {
-                    currentInput += ",";
-                    tbCalculos.Text += ",";
+                    MessageBox.Show("No se puede calcular la raíz de un número negativo!");
                 }
             }
-         }
+            else
+            {
+                tbCalculos.Text = "0";
+            }
+        }
+
+        private void GuardarEnHistorial(string operacion, double resultado)
+        {
+            string lineaHistorial = $"{operacion} = {resultado}\r\n";
+
+            int posicionInsertar = tbHistorial.Text.IndexOf("\r\n\r\n") + 4;
+            tbHistorial.Text = tbHistorial.Text.Insert(posicionInsertar, lineaHistorial);
+        }
 
         private void btnHistorial_Click(object sender, EventArgs e)
         {
-            tbHistorial.Visible = true;
+            tbHistorial.Visible = !tbHistorial.Visible;
         }
     }
 }

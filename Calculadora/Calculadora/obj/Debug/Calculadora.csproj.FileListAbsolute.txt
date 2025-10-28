@@ -9,3 +9,14 @@ C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\Calculadora\Calculado
 C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.exe
 C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
 C:\Users\Erika Gonzalez\Desktop\Javier\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.exe.config
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.exe.config
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.Calculadora.resources
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.Properties.Resources.resources
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\DELL\source\repos\proyecto-desarollo4\Calculadora\Calculadora\obj\Debug\Calculadora.pdb
