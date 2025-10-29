@@ -59,6 +59,7 @@
             this.tbCalculos.Location = new System.Drawing.Point(606, 74);
             this.tbCalculos.Margin = new System.Windows.Forms.Padding(6);
             this.tbCalculos.Name = "tbCalculos";
+            this.tbCalculos.ReadOnly = true;
             this.tbCalculos.Size = new System.Drawing.Size(406, 80);
             this.tbCalculos.TabIndex = 0;
             // 
