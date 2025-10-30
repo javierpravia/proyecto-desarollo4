@@ -19,7 +19,7 @@ namespace Calculadora
 
         private void Calculadora_Load(object sender, EventArgs e)
         {
-            CargarHistorial();  // Cargar historial desde la BD
+            CargarHistorial();  
         }
 
         private void agregarNumero(object sender, EventArgs e)
@@ -142,10 +142,10 @@ namespace Calculadora
 
         private void GuardarEnHistorial(string operacion, double resultado)
         {
-            // Guardar en la base de datos
+            
             GuardarEnBD(operacion, resultado);
 
-            // Mostrar en el TextBox
+            
             string lineaHistorial = $"{operacion} = {resultado}\r\n";
             int posicionInsertar = tbHistorial.Text.IndexOf("\r\n\r\n") + 4;
             tbHistorial.Text = tbHistorial.Text.Insert(posicionInsertar, lineaHistorial);
@@ -157,43 +157,48 @@ namespace Calculadora
         }
         private void GuardarEnBD(string operacion, double resultado)
         {
-            // 1. Crear la conexión
+            
             SqlConnection conn = new SqlConnection(conexion);
 
-            // 2. Abrir conexión
+            
             conn.Open();
 
-            // 3. Crear el comando SQL
+            
             string sql = "INSERT INTO Historial (Operacion, Resultado) VALUES (@op, @res)";
             SqlCommand cmd = new SqlCommand(sql, conn);
 
-            // 4. Agregar los valores
+            
             cmd.Parameters.AddWithValue("@op", operacion);
             cmd.Parameters.AddWithValue("@res", resultado);
 
-            // 5. Ejecutar
+            
             cmd.ExecuteNonQuery();
 
-            // 6. Cerrar conexión
+            
             conn.Close();
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tbCalculos.Text = "0";
+        }
+
         private void CargarHistorial()
         {
-            // 1. Limpiar el TextBox
+            
             tbHistorial.Text = " Historial de operaciones \r\n\r\n";
 
-            // 2. Conectar a la BD
+            
             SqlConnection conn = new SqlConnection(conexion);
             conn.Open();
 
-            // 3. Obtener los datos
+           
             string sql = "SELECT Operacion, Resultado FROM Historial ORDER BY Id DESC";
             SqlCommand cmd = new SqlCommand(sql, conn);
             SqlDataReader lector = cmd.ExecuteReader();
 
-            // 4. Leer cada registro
+           
             while (lector.Read())
             {
                 string op = lector["Operacion"].ToString();
@@ -201,7 +206,7 @@ namespace Calculadora
                 tbHistorial.Text += $"{op} = {res}\r\n";
             }
 
-            // 5. Cerrar todo
+            
             lector.Close();
             conn.Close();
         }

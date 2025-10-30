@@ -51,6 +51,7 @@
             this.btnSuma = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
             this.tbHistorial = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbCalculos
@@ -289,11 +290,22 @@
             this.tbHistorial.TabIndex = 24;
             this.tbHistorial.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1031, 178);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 48);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "CE";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Calculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tbHistorial);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnSuma);
@@ -322,7 +334,6 @@
             this.Name = "Calculadora";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Calculadora_Load);
-            this.Click += new System.EventHandler(this.agregarNumero);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,6 +364,7 @@
         private System.Windows.Forms.Button btnSuma;
         private System.Windows.Forms.Button btnDecimal;
         private System.Windows.Forms.TextBox tbHistorial;
+        private System.Windows.Forms.Button button1;
     }
 }
 

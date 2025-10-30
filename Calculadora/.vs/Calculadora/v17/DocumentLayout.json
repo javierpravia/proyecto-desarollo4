@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\proyecto-desarollo4\\Calculadora\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|C:\\Users\\DELL\\source\\repos\\proyecto-desarollo4\\Calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|c:\\users\\dell\\source\\repos\\proyecto-desarollo4\\calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|c:\\users\\dell\\source\\repos\\proyecto-desarollo4\\calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|C:\\Users\\DELL\\source\\repos\\proyecto-desarollo4\\Calculadora\\calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{89EA79DF-940B-4A9E-8213-855E2126CABA}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Calculadora\\Form1.cs",
               "ToolTip": "C:\\Users\\DELL\\source\\repos\\proyecto-desarollo4\\Calculadora\\Calculadora\\Form1.cs",
               "RelativeToolTip": "Calculadora\\Form1.cs",
-              "ViewState": "AgIAAJoAAAAAjJmZmZkJwLEAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAADgv7oAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T18:08:46.4Z",
               "IsPinned": true,
@@ -70,7 +70,7 @@
               "RelativeDocumentMoniker": "Calculadora\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\DELL\\source\\repos\\proyecto-desarollo4\\Calculadora\\Calculadora\\Form1.Designer.cs",
               "RelativeToolTip": "Calculadora\\Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T22:39:31.094Z",
               "EditorCaption": ""
